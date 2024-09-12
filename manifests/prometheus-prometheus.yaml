@@ -21,6 +21,7 @@ spec:
   image: quay.io/prometheus/prometheus:v2.50.1
   nodeSelector:
     kubernetes.io/os: linux
+    node-role.kubernetes.io/control-plane: ""
   podMetadata:
     labels:
       app.kubernetes.io/component: prometheus

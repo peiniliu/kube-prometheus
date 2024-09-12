@@ -80,6 +80,7 @@ spec:
             type: RuntimeDefault
       nodeSelector:
         kubernetes.io/os: linux
+        node-role.kubernetes.io/control-plane: ""
       securityContext:
         runAsNonRoot: true
         runAsUser: 65534

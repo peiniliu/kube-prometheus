@@ -92,6 +92,7 @@ spec:
           readOnly: false
       nodeSelector:
         kubernetes.io/os: linux
+        node-role.kubernetes.io/control-plane: ""
       serviceAccountName: prometheus-adapter
       volumes:
       - emptyDir: {}
